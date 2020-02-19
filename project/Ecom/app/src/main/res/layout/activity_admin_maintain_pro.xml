@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="10dp"
+    app:cardElevation="15dp"
+    tools:context=".Admin.AdminMaintainProActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/pro_maintain_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Name"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textSize="25sp"
+            />
+
+        <ImageView
+            android:id="@+id/pro_maintain_image"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@id/pro_maintain_name"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/pro_maintain_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Price"
+            android:textAlignment="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:layout_below="@id/pro_maintain_image"
+            android:layout_marginTop="8dp"/>
+
+
+        <EditText
+            android:id="@+id/pro_maintain_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Description"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_below="@id/pro_maintain_price"/>
+
+
+        <EditText
+            android:id="@+id/curr_pro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of Product Available"
+            android:textAlignment="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:layout_below="@id/pro_maintain_description"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/pro_maintain_btn"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:text="Apply Changes"
+            android:layout_marginRight="10dp"
+            android:background="@color/design_default_color_primary"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/pro_delete_btn"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:text="Delete Product"
+            android:layout_marginRight="10dp"
+            android:background="@color/design_default_color_primary"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:layout_marginLeft="210dp"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

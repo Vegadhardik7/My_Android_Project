@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ppr"
+    tools:context=".RegisterActivity">
+
+
+
+
+    <EditText
+        android:id="@+id/resname"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttons"
+        android:hint="UserName"
+        android:layout_above="@id/resnumber"
+        android:textColorHint="#D3D3D3"
+        android:textSize="30sp"
+        android:padding="20dp"
+        android:inputType="text"/>
+
+
+
+
+    <EditText
+        android:id="@+id/resnumber"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/buttons"
+        android:hint="Phone Number"
+        android:textColorHint="#D3D3D3"
+        android:layout_marginBottom="5dp"
+        android:textSize="30sp"
+        android:padding="20dp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/respass"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/resnumber"
+        android:background="@drawable/buttons"
+        android:hint="Password"
+        android:textColorHint="#D3D3D3"
+        android:textSize="30sp"
+        android:padding="20dp"
+        android:inputType="textPassword"/>
+
+
+    <Button
+        android:id="@+id/resbtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/respass"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/buttons"
+        android:onClick="createAccount"
+        android:text="CREATE ACCOUNT"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        tools:ignore="OnClick" />
+
+
+
+
+</RelativeLayout>
